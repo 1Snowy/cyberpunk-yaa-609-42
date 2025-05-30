@@ -1,0 +1,124 @@
+.giveaway {
+  position: relative;
+  color: #fff;
+  padding: 0px 0 70px;
+  background-color: black;
+  padding: 36px;
+  @media (max-width: $brakpoint-sml) {
+    padding: 12px;
+  }
+}
+
+.giveaway__play p {
+  max-width: 756px;
+  margin-bottom: 40px;
+  padding: 25px 0 0;
+}
+
+.giveaway__section-text {
+  display: flex;
+  gap: 25px;
+  max-width: 756px;
+}
+
+.giveaway__section-text h1 {
+  padding: 45px 0 11px;
+}
+
+.giveaway__registration {
+  display: flex;
+  padding: 10px;
+  @media (max-width: $brakpoint-lg) {
+    flex-direction: column-reverse;
+  }
+}
+
+.giveaway__form {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  max-width: 364px;
+  margin-top: 53px;
+  width: 460px;
+}
+
+.giveaway__input {
+  border-bottom: 1px solid #777777;
+  width: 100%;
+  font-size: 14px;
+  background: none;
+  height: 30px;
+  outline: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  max-width: 364px;
+}
+
+.giveaway__upload-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px dashed #777777;
+  padding: 30px 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  height: 95px;
+  transition: border-color 0.3s ease;
+}
+
+.giveaway__upload-input {
+  display: none;
+}
+
+.giveaway__upload-title {
+  font-size: 14px;
+  text-decoration: underline;
+  font-weight: 200;
+  line-height: 17px;
+  margin-bottom: 2px;
+}
+
+.giveaway__upload-formats {
+  font-size: 9px;
+  color: #aaa;
+  line-height: 22px;
+}
+
+.giveaway__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 0;
+  font-size: 9px;
+  font-weight: 200;
+  letter-spacing: 0.02rem;
+  cursor: pointer;
+}
+
+.giveaway__checkbox-input {
+  appearance: none;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.giveaway__checkbox-box {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #777777;
+  background: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+.giveaway__checkbox-input:checked+.giveaway__checkbox-box::after {
+  content: "✓";
+  position: absolute;
+  top: -1px;
+  left: 1px;
+  color: #feda00;
+  font-size: 11px;
+  line-height: 1;
+  font-weight: bold;
+}

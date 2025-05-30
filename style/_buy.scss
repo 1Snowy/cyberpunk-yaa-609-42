@@ -1,0 +1,65 @@
+.buy{
+    background: url('../img/buy-background.svg') no-repeat;      
+    color: #fff;
+    background-color: black;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+.buy__elements{
+    padding: 55px 0 0px 15px;
+    background-color: black;
+
+    h1{
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 18.5px;
+    }
+    @media (max-width: $brakpoint-sm) {
+        flex-direction: column;
+    }
+}
+
+.buy__complectation{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    p{
+        padding: 8px 0 12px 0;
+        letter-spacing: 0.02rem;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        gap: 17px;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        letter-spacing: 0.02rem;
+        font-weight: 300;
+    }
+}
+
+.buy__choice{
+    padding: 19px 0;
+
+    p{
+        letter-spacing: 0.02rem;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: 22.5% auto;
+        padding-top: 19px;
+        padding-bottom: 30px;
+        row-gap: 34px;
+    }
+}

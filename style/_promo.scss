@@ -1,0 +1,57 @@
+.promo {
+    background-image: url("../img/cyberpunk_promo.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.navigation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 17px;
+    z-index: 1;
+
+    ul {
+        display: flex;
+        gap: 33px;
+
+        img {
+            width: 23px;
+        }
+    }
+
+    @media (max-width: $brakpoint-xlg) {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+
+    @media (max-width: $brakpoint-smk) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.promo__access {
+    height: 715px;
+    position: relative;
+}
+
+.promo__access-items {
+    max-width: 510px;
+    padding: 54px;
+    background: #F8F200;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    clip-path: polygon(40px 0%, 100% 0%, 100% 86%, 92% 100%, 0% 100%, 0% 40px);
+
+    button {
+        margin-top: 22px;
+    }
+    @media (max-width: $brakpoint-xlg) {
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Archangelsk';
+    src: url('../fonts/Archangelsk Regular/Archangelsk Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Archangelsk', sans-serif;
+    font-weight: 500;
+    line-height: auto;
+}
+
+h1{
+    font-size: 49px;
+    @media (max-width: $brakpoint-md) {
+        font-size: 35px;
+    }
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    padding: 15px 39px;
+    background: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 19px;
+    line-height: 31px;
+    font-weight: 700;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.button_dark{
+    background-color: #000;
+    color: #F8F200;
+}
+
+.button_light{
+    background-color: #F8F200;
+    color: #000;
+    font-size: 14px;
+    padding: 9px 41px;
+}
+
+.logo{
+    height: 59px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.container{
+    max-width: 1016px;
+    margin: 0 auto;
+}
+
+span{
+    color: #52BEDC;
+    font-weight: 600;
+}
+
+p{
+    font-size: 14px;
+    line-height: 27px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.01rem;
+}

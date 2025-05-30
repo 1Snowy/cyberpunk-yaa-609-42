@@ -1,0 +1,93 @@
+.immersion {
+    position: relative;
+    background-color: #F8F200;
+    padding: 36px;
+    @media (max-width: $brakpoint-sml) {
+        padding: 12px;
+    }
+}
+
+.immersion__group {
+    display: flex;
+
+    button{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 28px;
+        max-width: 194px;
+    }
+
+    @media (max-width: $brakpoint-lg) {
+        flex-direction: column;
+    }
+}
+
+.immersion__pictures {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 624px;
+    align-items: center;
+}
+
+.immersion__pictures_big {
+    max-width: 624px;
+    @media (max-width: $brakpoint-lg) {
+        max-width: 400px;
+    }
+    @media (max-width: $brakpoint-sm) {
+        max-width: 270px;
+    }
+}
+
+.immersion__pictures-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: $brakpoint-lg) {
+        flex-direction: row;
+        gap: 20px;
+        padding-bottom: 20px;
+        max-width: 400px;
+    }
+    @media (max-width: $brakpoint-sm) {
+        max-width: 270px;
+        flex-direction: column;
+    }
+}
+
+.immersion__about {
+    display: flex;
+    flex-direction: column;
+    padding-left: 25px;
+
+    p {
+        margin: 21px 0 16px;
+    }
+    @media (max-width: $brakpoint-lg) {
+        padding-left: 0;
+    }
+
+}
+
+.immersion__list{
+    display: flex;
+    gap: 10px;
+}
+
+.immersion__list-image{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.immersion__list-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    letter-spacing: 0.01rem;
+    font-size: 14px;
+}
+
+
